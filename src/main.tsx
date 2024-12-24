@@ -1,16 +1,10 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  Route,
-  RouterProvider,
-  Routes,
-} from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import NotFoundPage from "./components/NotFoundPage.tsx";
 import Vendors from "./pages/Vendors.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <Vendors />,
+        element: <Dashboard />,
       },
       {
         path: "/profiles",
