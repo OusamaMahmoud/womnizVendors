@@ -3,8 +3,8 @@ import "./index.css";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import NotFoundPage from "./components/NotFoundPage.tsx";
-import Vendors from "./pages/Vendors.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
+import VendorProfile from "./pages/vendor/VendorProfile.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/profiles",
-        element: <Vendors />,
+        element: <VendorProfile />,
       },
     ],
   },
