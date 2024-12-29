@@ -61,6 +61,7 @@ const topSelling = [
     thumbnail: "https://img.daisyui.com/images/profile/demo/2@94.webp",
   },
 ];
+
 const MainLayout = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 ">

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/main/Navbar";
+import Sidebar from "./components/main/sidebar/Sidebar";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <div className="w-full">
           <Navbar />
         </div>
-        <div className="p-10  flex-1 border container mx-auto rounded-lg shadow-xl">
+        <div className="p-10 flex-1 border container mx-auto rounded-lg shadow-xl">
           <Outlet />
         </div>
       </div>
